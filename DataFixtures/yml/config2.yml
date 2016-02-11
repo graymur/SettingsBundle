@@ -1,0 +1,29 @@
+graymur_settings:
+    admin_panel_title:
+        label: Site name
+        value: Test site
+        type: text
+    admin_email:
+        label: Admin e-mail
+        value: graymur@mail.ru
+    use_wysiwyg:
+        label: Admin e-mail
+        value: 1
+        type: bool
+    paging_size: 10
+    # group key should start with 'group_'
+    group_user:
+        label: User settings
+        settings:
+            allow_anonymous:
+                label: Allow anonymous access
+                value: 0
+                type: bool
+            allow_remember_me:
+                label: Allow remembering user's login
+                value: 1
+                type: bool
+    group_another:
+        settings:
+            another_group_setting:
+                value: Another group setting value

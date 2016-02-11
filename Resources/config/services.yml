@@ -1,0 +1,12 @@
+services:
+    gr_settings:
+        class: Graymur\SettingsBundle\Model\Manager
+        calls:
+             - [setContainer, ["@service_container"]]
+
+    gr_settings_extension:
+        class: Graymur\SettingsBundle\Twig\GraymurSettingsExtension
+        arguments:
+            - @service_container
+        tags:
+            - { name: twig.extension, priority: 255 }

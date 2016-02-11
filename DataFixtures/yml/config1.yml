@@ -1,0 +1,5 @@
+graymur_settings:
+    admin_bundle_entry:
+        label: Admin bundle entry label
+        value: Admin bundle entry value
+        type: text

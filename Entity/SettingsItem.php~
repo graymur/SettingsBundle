@@ -1,0 +1,50 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Администратор
+ * Date: 03.07.14
+ * Time: 16:27
+ */
+
+namespace Graymur\SettingsBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="settings")
+ */
+class SettingsItem
+{
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    protected $settings_key;
+
+    /**
+     * @ORM\Column(type="text", length=255)
+     */
+    protected $settings_value;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $settings_label;
+
+    /**
+     * @ORM\Column(type="string", length=255, options={"default" = "default"})
+     */
+    protected $settings_group;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    protected $settings_type;
+}
